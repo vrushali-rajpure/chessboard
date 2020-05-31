@@ -15,6 +15,20 @@ public class HorsePieceTest {
         assertArrayEquals(getExpectedCell(), cells.toArray());
     }
 
+    @Test
+    public void shouldNotIncludeInvalidMovesFromGivenPosition() {
+        final Piece piece = PieceType.createPiece(PieceType.Horse);
+        final List<Cell> cells = piece.possibleMoves(new Cell('G', 2));
+
+        final Cell[] expectedCells = {
+            new Cell('H', 4),
+            new Cell('E', 1),
+            new Cell('E', 3),
+            new Cell('F', 4),
+        };
+        assertArrayEquals(expectedCells, cells.toArray());
+    }
+
     private Cell[] getExpectedCell() {
         return new Cell[] {
             new Cell('F', 5),
