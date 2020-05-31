@@ -1,3 +1,5 @@
+package com.chessboard;
+
 import java.util.Arrays;
 
 public enum PieceType {
@@ -8,7 +10,7 @@ public enum PieceType {
             .stream(PieceType.values())
             .filter(type -> type.toString().equalsIgnoreCase(typeStr))
             .findFirst()
-            .orElseThrow(() -> new IllegalArgumentException("Piece type is invalid "));
+            .orElseThrow(() -> new IllegalArgumentException("com.chessboard.Piece type is invalid "));
     }
 
     static public Piece createPiece(PieceType type) {

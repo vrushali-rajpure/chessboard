@@ -1,3 +1,5 @@
+package com.chessboard;
+
 import java.util.List;
 
 public interface Piece {

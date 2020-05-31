@@ -1,20 +1,26 @@
+package com.chessboard;
+
+import com.chessboard.Cell;
+import com.chessboard.Piece;
+import com.chessboard.PieceType;
 import java.util.List;
 import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class RookPieceTest {
+public class QueenPieceTest {
 
     @Test
     public void shouldReturnPossibleMovesFromGivenPosition() {
-        final Piece piece = PieceType.createPiece(PieceType.Rook);
+        final Piece piece = PieceType.createPiece(PieceType.Queen);
         final List<Cell> cells = piece.possibleMoves(new Cell('D', 5));
 
         assertArrayEquals(getExpectedCell(), cells.toArray());
     }
 
-    private Cell[] getExpectedCell() {
+    Cell[] getExpectedCell() {
         return new Cell[] {
+
             new Cell('A', 5),
             new Cell('B', 5),
             new Cell('C', 5),
@@ -30,6 +36,23 @@ public class RookPieceTest {
             new Cell('D', 6),
             new Cell('D', 7),
             new Cell('D', 8),
+
+            new Cell('C', 4),
+            new Cell('B', 3),
+            new Cell('A', 2),
+            new Cell('E', 4),
+            new Cell('F', 3),
+            new Cell('G', 2),
+            new Cell('H', 1),
+
+            new Cell('E', 6),
+            new Cell('C', 6),
+            new Cell('F', 7),
+            new Cell('B', 7),
+            new Cell('G', 8),
+            new Cell('A', 8),
+
         };
+
     }
 }

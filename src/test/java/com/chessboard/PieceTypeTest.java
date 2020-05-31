@@ -1,3 +1,12 @@
+package com.chessboard;
+
+import com.chessboard.BishopPiece;
+import com.chessboard.HorsePiece;
+import com.chessboard.KingPiece;
+import com.chessboard.PawnPiece;
+import com.chessboard.PieceType;
+import com.chessboard.QueenPiece;
+import com.chessboard.RookPiece;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

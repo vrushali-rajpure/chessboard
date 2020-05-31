@@ -1,3 +1,5 @@
+package com.chessboard;
+
 import java.util.Objects;
 
 public class Cell {

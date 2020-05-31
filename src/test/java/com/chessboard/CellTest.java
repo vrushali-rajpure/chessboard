@@ -1,3 +1,6 @@
+package com.chessboard;
+
+import com.chessboard.Cell;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
