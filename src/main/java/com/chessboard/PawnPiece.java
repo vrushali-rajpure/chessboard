@@ -14,7 +14,6 @@ public class PawnPiece implements Piece {
             final char x = (char) (65 + xIndex + 1);
 
             cells.add(new Cell(currentCell.getPositionX(), positionY));
-            cells.add(new Cell(x, positionY));
         }
 
         return cells;

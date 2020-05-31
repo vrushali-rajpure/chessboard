@@ -21,7 +21,6 @@ public class PawnPieceTest {
     private Cell[] getExpectedCell() {
         return new Cell[] {
             new Cell('D', 6),
-            new Cell('E', 6),
         };
     }
 }
