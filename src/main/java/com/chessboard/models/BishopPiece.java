@@ -1,4 +1,4 @@
-package com.chessboard;
+package com.chessboard.models;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,8 +28,8 @@ public class BishopPiece implements Piece {
             cells.add(new Cell(aChar1, yIndexDecrement + 1));
         }
 
-        int xIndexIncrement = currentCell.getPositionXIndex() ;
-        int xIndexDecrementRight = currentCell.getPositionXIndex() ;
+        int xIndexIncrement = currentCell.getPositionXIndex();
+        int xIndexDecrementRight = currentCell.getPositionXIndex();
         int yIndexIncrement = currentCell.getPositionY() - 1;
         while (xIndexIncrement < 7 && yIndexIncrement < 7) {
             xIndexIncrement = xIndexIncrement + 1;

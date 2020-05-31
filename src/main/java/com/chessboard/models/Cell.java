@@ -1,4 +1,4 @@
-package com.chessboard;
+package com.chessboard.models;
 
 import java.util.Objects;
 
@@ -19,7 +19,7 @@ public class Cell {
     }
 
     public int getPositionXIndex() {
-        return (positionX - 'A') ;
+        return (positionX - 'A');
     }
 
     public int getPositionY() {

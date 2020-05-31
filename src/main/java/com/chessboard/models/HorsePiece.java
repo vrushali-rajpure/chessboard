@@ -1,4 +1,4 @@
-package com.chessboard;
+package com.chessboard.models;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,7 @@ public class HorsePiece implements Piece {
             {-1, 2},
         };
 
-        final int xIndex = currentCell.getPositionXIndex() ;
+        final int xIndex = currentCell.getPositionXIndex();
         final int yIndex = currentCell.getPositionY() - 1;
 
         List<Cell> cells = new ArrayList<>();

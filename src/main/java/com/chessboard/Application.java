@@ -1,5 +1,8 @@
 package com.chessboard;
 
+import com.chessboard.models.Cell;
+import com.chessboard.models.Piece;
+import com.chessboard.models.PieceType;
 import java.util.Scanner;
 
 import static java.lang.Integer.parseInt;

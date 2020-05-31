@@ -1,4 +1,4 @@
-package com.chessboard;
+package com.chessboard.models;
 
 import java.util.ArrayList;
 import java.util.List;

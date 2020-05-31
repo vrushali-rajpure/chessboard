@@ -1,4 +1,4 @@
-package com.chessboard;
+package com.chessboard.models;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 public class RookPiece implements Piece {
     @Override public List<Cell> possibleMoves(Cell currentCell) {
         List<Cell> cells = new ArrayList<>();
-        final int xIndex = currentCell.getPositionXIndex() ;
+        final int xIndex = currentCell.getPositionXIndex();
         final int yIndex = currentCell.getPositionY() - 1;
 
         for (int i = 0; i <= 7; i++) {
